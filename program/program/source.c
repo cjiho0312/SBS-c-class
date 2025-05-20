@@ -23,7 +23,7 @@ void main()
 
 	int integer = 100;
 
-	float decimal = 36.5;
+	float decimal = 36.5f;
 
 	// 변수의 메모리 공간은 프로그램이 실행될 때마다 바뀝니다.
 #pragma endregion
