@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\program\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DB3DBA9-D1D6-4CF2-8D88-01AC343F1AE1}|program\\program.vcxproj|C:\\Users\\Administrator\\Desktop\\program\\program\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0DB3DBA9-D1D6-4CF2-8D88-01AC343F1AE1}|program\\program.vcxproj|C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\program\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0DB3DBA9-D1D6-4CF2-8D88-01AC343F1AE1}|program\\program.vcxproj|solutionrelative:program\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806E1551-80DB-47F6-B713-0368FD0B1CF4}|class1th (varlable \u0026 Constant)\\class1th (varlable \u0026 Constant).vcxproj|C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{806E1551-80DB-47F6-B713-0368FD0B1CF4}|class1th (varlable \u0026 Constant)\\class1th (varlable \u0026 Constant).vcxproj|solutionrelative:class1th (varlable \u0026 Constant)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "source.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c",
+              "RelativeDocumentMoniker": "class1th (varlable \u0026 Constant)\\source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c",
+              "RelativeToolTip": "class1th (varlable \u0026 Constant)\\source.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-05-21T05:42:00.069Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\program\\program\\source.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\program\\source.c",
               "RelativeDocumentMoniker": "program\\source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\program\\program\\source.c*",
-              "RelativeToolTip": "program\\source.c*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\program\\source.c",
+              "RelativeToolTip": "program\\source.c",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-05-20T05:25:04.483Z",
               "EditorCaption": ""
