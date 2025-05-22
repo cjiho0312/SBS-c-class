@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{806E1551-80DB-47F6-B713-0368FD0B1CF4}|class1th (varlable \u0026 Constant)\\class1th (varlable \u0026 Constant).vcxproj|C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{806E1551-80DB-47F6-B713-0368FD0B1CF4}|class1th (varlable \u0026 Constant)\\class1th (varlable \u0026 Constant).vcxproj|solutionrelative:class1th (varlable \u0026 Constant)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E57F6F-8096-49BF-B13F-CAE08BDEEC4C}|class2th (bit)\\class2th (bit).vcxproj|C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class2th (bit)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E4E57F6F-8096-49BF-B13F-CAE08BDEEC4C}|class2th (bit)\\class2th (bit).vcxproj|solutionrelative:class2th (bit)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c",
-              "RelativeDocumentMoniker": "class1th (varlable \u0026 Constant)\\source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c",
-              "RelativeToolTip": "class1th (varlable \u0026 Constant)\\source.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-21T05:42:00.069Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -41,9 +32,35 @@
               "RelativeDocumentMoniker": "program\\source.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\program\\source.c",
               "RelativeToolTip": "program\\source.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-05-20T05:25:04.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "source.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c",
+              "RelativeDocumentMoniker": "class1th (varlable \u0026 Constant)\\source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c",
+              "RelativeToolTip": "class1th (varlable \u0026 Constant)\\source.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-05-21T05:42:00.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "source.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class2th (bit)\\source.c",
+              "RelativeDocumentMoniker": "class2th (bit)\\source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class2th (bit)\\source.c",
+              "RelativeToolTip": "class2th (bit)\\source.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-05-22T06:20:46.795Z",
               "EditorCaption": ""
             }
           ]
