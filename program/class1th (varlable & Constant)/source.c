@@ -23,7 +23,8 @@ void main()
 
 	// int integer = 100;
 
-	// float decimal = 36.5f;
+	// float decimal = 36.5f; // 여기서의 f는 float형을 의미합니다. double형은 끝	에 f를 붙이지	않습니다.
+
 
 	// printf("alphabet 변수의 값 : %c\n", alphabet);
 	// printf("integer 변수의 값 : %d\n", integer);
