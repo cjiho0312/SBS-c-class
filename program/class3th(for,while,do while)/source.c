@@ -97,6 +97,25 @@ void main()
 
 #pragma endregion
 
+#pragma region continue문
+	// 해당 조건문만 실행하지 않고, 반복문은 이어서 실행하는 제어문입니다.
+
+	/*
+	printf("1부터 10까지 나열하되, 3의 배수는 빼고 나열한다.\n");
+
+	for (int count = 1; count <= 10; count++)
+	{
+		if (count % 3 == 0) // 변수를 3으로 나눈 나머지 값이 0일 때
+		{
+			continue; // 이번에는 실행하지 않는다
+		}
+		printf("%d\n", count);
+
+	}
+	*/
+
+#pragma endregion
+
 
 #pragma endregion
 
