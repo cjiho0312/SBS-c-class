@@ -9,6 +9,21 @@ void main()
 	// 서로 다른 자료형을 가지고 있는 변수끼리 연산이 이루어질 때
 	// 기존에 저장했던 자료형을 다른 자료형으로 변환하여 연산을 수행하는 과정입니다.
 
+#pragma region 정수의 승격
+	// 값의 타입이 'int' 또는 더 큰 정수형으로 자동 변환되는 과정을 의미합니다.
+	// 주로 연산 과정에서 작은 정수형 타입(char, short 등)이 int로 변환되는 것을 말합니다.
+
+	char a = 5;
+	short b = 7;
+	
+	printf("char a의 메모리 크기 : %u\n", sizeof(a)); // 1 byte
+	printf("short b 의 메모리 크기 : %u\n", sizeof(b)); // 2 byte
+	printf("a와 b를 합했을 때 결과값의 메모리 크기 : %u\n", sizeof(a + b)); // 4 byte (int 자료형)
+	
+
+#pragma endregion
+
+
 #pragma region 암묵적 형 변환
 	// 서로 다른 자료형으로 연산이 이루어질 때 자료형의 크기가 큰 자료형으로 변환되는 과정입니다.
 
