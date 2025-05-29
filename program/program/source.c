@@ -2,170 +2,97 @@
 
 void main()
 {
-#pragma region 주소 연산자
-	// 변수의 주소 값을 반환하는 연산자입니다.
-	// 주소 연산자는 "&" 기호를 사용합니다.
-
+#pragma region 배열
+	// 같은 자료형의 변수들로 이루어진 유한 집합입니다.
+	
 	/*
-	int data = 10;
+	int array[7]; // 아직 초기화 전이라 garbage 값들이 들어가있음.
 
-	printf("data 변수의 주소 : %p\n", &data);
+	int size = sizeof (array) / sizeof (int); // array의 크기(28) / int의 크기(4)
+
+	for (int i = 0; i < size; i++)
+	{
+		array[i] = (i + 1) * 10;
+		printf("array[%d] = %d\n", i, array[i]);
+	}
 	*/
 
-	// 데어터의 주소 값은 해당 데이터가 저장된 메모리의 시작 주소를 의미합니다.
-#pragma endregion
-
-#pragma region scanf_s 함수
-	// 표준 입력함수로, 여러 종류의 데이터를 다양한 서식에 맞추어 입력해주는 함수입니다.
-	// scanf_s("%d", &변수)
+	// 배열의 경우 첫번째 원소는 0부터 시작합니다.
 
 	/*
 	
-	int a = 0;
+	int list[5] = { 1, 2, 3, 4, 5 };
 
-	printf("변수 a의 값을 설정하세요.\n");
+	int* pointer = &list[0];
 
-	// 표준 입력 함수는 입력을 수행할 때까지 작업으로 넘어갈 수 없습니다.
+	* pointer = 99;
 
-	scanf_s("%d", &a);
+	printf("list[0]의 값 : %d\n\n", list[0]);
 
-	// 버퍼는 데이터가 이동할 때 임시로 저장되는 공간이며,
-	// 형식 지정자에 따라 입력할 수 있는 데이터의 범위도 결정됩니다.
+	pointer += 1; // pointer = pointer + 1, list[1]을 가리키게 됨
 
-	printf("a의 값 : %d", a);
-
-	*/
-
-	// 표준 입력 함수로 데이터를 입력하게 되면 버퍼에 데이터를 보관하였다가
-	// 입력하는 순간 버퍼 안의 내용을 프로그램에 전송합니다.
-#pragma endregion
-
-#pragma region 포인터
-	//메모리의 주소값을 저장할 수 있는 변수입니다.
-	// 자료형 * 변수;
-	
-	/*
-	int a = 10;
-
-	int * pointer = &a; // a 변수의 주소 값을 저장합니다.
-
-	printf("a의 주소 : %p\n", &a);
-	printf("pointer의 값 : %p\n", pointer);
-	
-
-	// 포인터 변수도 자신의 메모리 공간을 가지고 있으며,
-	// 포인터 변수에 변수의 시작 주소릏 저장하게 되면
-	// 해당 변수의 시작 주소를 가리키게 됩니다.
-
-	int packet = 10;
-	int* pointer = &packet;
-
-	*pointer = 99;
-
-
-	printf("packet 변수의 값 : %d\n", packet);
 	printf("pointer가 가리키는 값 : %d\n", *pointer);
+	printf("pointer 값 : %p\n", pointer);
+	printf("list[1]의 주소 값 : %p\n", &list[1]);
 
-	// 포인터 변수는 포인터가 가리키는 메모리 공간의 자료형은 알 수 없으므로,
-	// 포인터가 가리키는 메모리의 자료형을 선언해주어야 합니다.
-
-	int storage = 10;
-	pointer = &storage;
-
-	*pointer = 20;
-
-
-	printf("storage의 주소 : %p\n", &storage);
-	printf("pointer의 값 : %p\n", pointer);
-
-	printf("pointer 변수의 크기 : %u\n", sizeof(pointer));
 	*/
 
-	// 포인터 변수의 크기는 중앙 처리 장치가 한 번에 처리할 수 있는 크기로 정해지며,
-	// 한 번에 처리할 수 있는 크기는 운영체제에 따라 크기가 결정됩니다.
 
+	// 배열은 원하는 원소에 원하는 값을 저장할 수 있으며
+	// 배열의 크기는 컴파일이 되는 시점부터 고정된 메모리 공간을 가지게 됩니다.
+
+
+	// float container[ ] = { 10.0f, 12.5f, 15.0f }
+
+
+	// 배열의 크기는 생략할 수 있으며, 초기화 목록에서 설정한 요소에 따라
+	// 배열의 크기가 결정됩니다.
 #pragma endregion
 
-#pragma region 상수 지시 포인터
-	// 포인터가 가리키는 주소에 저장되어있는 값을 변경할 수 없도록 지정되어있는 포인터입니다.
-	// const 자료형 * 변수 (여기서 const 자료형만 상수화 되고, 변수는 상수화 되지 않는다.)
+#pragma region 문자열
+	// 연속적인 메모리 공간에 저장된 문자 변수의 집합입니다.
+
+
+	// const char * word = "Game";
+	
+	// printf("word의 문자열 : %s\n", word);
+
+
+	// 문자열의 경우 포인터를 이용하여 문자열 상수를 가리키도록 할 수 있으며,
+	// 문자열 상수는 데이터 영역에 읽기 전용 공간에 저장되기 때문에
+	// 문자열의 값을 변경할 수 없습니다.
+
+
+	// word = "Overwat\0ch"; // \0 (null)이 나오면 문자열이 끝납니다.
+	
+	// printf("word의 문자열 : %s\n", word);
+
+
+	// 문자열의 공백도 함께 메모리 공간에 포함하여 크기가 결정되며,
+	// 마지막에 문자열의 끝을 알려주는 제어 문자가 추가됩니다.
 
 	/*
-	int height = 10;
-	int width = 20;
+	char name[] = "CJiho";
+	printf("name 배열의 값 : %s\n", name);
 
-	printf("height 변수의 값 : %d\n", height);
-	printf("width 변수의 값 : %d\n\n", width);
+	name[0] = 'T';
+	printf("name 배열의 값 : %s\n", name);
 
-	const int* constPointer = &height;
-
-	printf("height의 주소 : %p\n", &height);
-	printf("constPointer의 값 : %p\n", constPointer);
-	printf("constPointer가 가르키는 값 : %d\n\n", *constPointer);
-
-	constPointer = &width;
-
-	printf("width의 주소 : %p\n", width);
-	printf("constPointer의 값 : %p\n", constPointer);
-	printf("constPointer가 가르키는 값 : %d\n\n", *constPointer);
+	// name = "school"; // 새로운 주소를 넣는 것은 불가능, 포인터 상수.
 	*/
 
-#pragma endregion
 
-#pragma region 포인터 상수
-// 포인터 변수가 가리키고 있는 주소 값을 변경할 수 없도록 지정되어 있는 포인터입니다.
-// 자료형 * const 변수 (const 변수가 상수화됩니다.)
-
-/*
-int a = 10;
-int b = 20;
-
-int* const pointer = &a;
-
-printf("a의 값 : %d\n", a);
-printf("pointer가 가리키는 값 : %d\n", *pointer);
-printf("pointer의 값 : %p\n\n", pointer);
-
-*pointer = 99;
-
-printf("a의 값 : %d\n", a);
-printf("pointer가 가리키는 값 : %d\n", *pointer);
-printf("pointer의 값 : %p\n", pointer);
-*/
-
-//pointer = &b;
-
-
+	// 문자열을 저장하게 되면 맨 마지막에 무효의 문자까지 메모리 공간에 저장됩니다.
 
 #pragma endregion
 
-#pragma region 범용 포인터
-// 자료형이 정해지지 않은 상태로 모든 자료형을 저장할 수 있는 포인터입니다.
+#pragma region ASCII code, Uni code
 
-char ch ='A';
-int in = 13;
-float fo = 5.3f;
+	// ASCII 코드(미국정보교환표준부호)는 영문 알파벳을 사용하는 대표적인 문자 인코딩 방식입니다.
+	// c언어에서 char 자료형인 문자형은 숫자로 값을 저장하며,
+	// 이후 아스키 코드를 이용해 문자로 변환하여 나타냅니다.
 
-void * box = &ch;
-*(char *)box = 'B';
-
-box = &in;
-*(int*)box = 20;
-
-box = &fo;
-*(float*)box = 7.5f;
-
-printf("ch 변수의 값 : %c\n", ch);
-printf("in 변수의 값 : %d\n", in);
-printf("fo 변수의 값 : %f\n", fo);
-
-
-// 범용 포인터는 메모리 주소에 접근해서 값을 변경할 수 없으므로
-// 범용 포인터가 가리키는 변수의 자료형으로 변환해주어야 합니다.
 #pragma endregion
 
 
 }
-
-//질문
-// 주소값이 매번 실행될 때마다 바뀌는 이유는 무엇인가요?
