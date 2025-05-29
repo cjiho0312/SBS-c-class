@@ -86,11 +86,32 @@ void main()
 
 #pragma endregion
 
-#pragma region ASCII code, Uni code
+#pragma region ASCII code / Uni code
 
-	// ASCII 코드(미국정보교환표준부호)는 영문 알파벳을 사용하는 대표적인 문자 인코딩 방식입니다.
+
+#pragma region  ASCII code
+	// 아스키 코드란 ANSI(미국표준협회)에서 제시한 표준 코드 체계이며,
+	// 영어, 알파벳, 숫자, 기호만 표현할 수 있습니다.
+
+	// 7비트, 즉 0부터 127까지 총 128개의 문자만 표현 가능합니다.
+	// 8비트를 모두 활용하는 방식으로 확장한 "확장 아스키"도 존재합니다.
+
+	printf("아스키코드 A를 문자로 표현 : %c\n", 'A'); // A 출력
+	printf("아스키코드 A를 숫자로 표현 : %d\n\n", 'A'); // 65 출력
+	
 	// c언어에서 char 자료형인 문자형은 숫자로 값을 저장하며,
 	// 이후 아스키 코드를 이용해 문자로 변환하여 나타냅니다.
+#pragma endregion
+
+#pragma region Unicode
+	// 유니코드는 전 세계의 문자를 표현하기 위한 국제 표준 문자 인코딩 방식입니다.
+	// 유니코드는 각 문자에 고유한 번호(코드 포인트)를 부여하여,
+	// 다양한 언어의 문자를 컴퓨터에서 일관되게 표현하고 처리할 수 있도록 합니다.
+	
+	printf("유니코드(가) : \uAC00\n"); // "가" 출력
+	printf("유니코드(거) : \uAC70\n"); // "거" 출력
+
+#pragma endregion
 
 #pragma endregion
 

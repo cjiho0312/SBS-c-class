@@ -79,6 +79,18 @@ void main()
 
 
 // 질문
+// 
 // 명시적 형 변환 시 	float c = (float)a / b; 뒤에 f를 붙이지 않는 이유는?
+// f를 붙이는 이유 : float형 상수임을 알려주기 위해서임. 즉, 리터럴 상수 (ex. 35.4)에만 f 를 붙이는 것.
+// 형 변환, 변수나 계산식 결과에는 붙이지 않음.
+// 
 // 굳이 변수를 사용하지 않고 define을 사용하는 이유? int SIZE = 5;나 const int SIZE = 5; 같은 경우와의 차이점?
+// define은 빠르고 가볍지만 자료형이 없고 디버깅이 어려움.
+// const는 안전하고 자료형이 있어서 디버깅하기 쉬움
+// 즉, const 가 더 안정적이고 좋음.
+// 
 // 헤더 library.h 파일을 이동시켰는데도 / program/library.h로 인식되는 이유는?
+// Visual Studio 프로젝트 설정에서 include 디렉토리를 안 바꾸면, vs는 여전히 program 쪽에서 library.h를 찾으려고 함
+// 해결 방법 :class5th 프로젝트 우클릭 → 속성(Properties) -> [C / C++] →[일반] → 추가 포함 디렉터리
+// library.h가 있는 디렉터리(예: $(ProjectDir) 또는 $(ProjectDir)include) 추가
+// 저장하고 #include "library.h" 로 정상 실행 확인
