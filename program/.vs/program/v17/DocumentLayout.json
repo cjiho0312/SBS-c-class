@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\",
+  "WorkspaceRootPath": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DB3DBA9-D1D6-4CF2-8D88-01AC343F1AE1}|program\\program.vcxproj|C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\program\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0DB3DBA9-D1D6-4CF2-8D88-01AC343F1AE1}|program\\program.vcxproj|C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\program\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0DB3DBA9-D1D6-4CF2-8D88-01AC343F1AE1}|program\\program.vcxproj|solutionrelative:program\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A7AFD35-E33E-49C0-BA1E-67DD47D4C9FB}|class7th array\\class7th array.vcxproj|C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class7th array\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5A7AFD35-E33E-49C0-BA1E-67DD47D4C9FB}|class7th array\\class7th array.vcxproj|C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class7th array\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5A7AFD35-E33E-49C0-BA1E-67DD47D4C9FB}|class7th array\\class7th array.vcxproj|solutionrelative:class7th array\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{788A92C3-D8C8-4429-B03B-A9117CE0273A}|class6th (pointer)\\class6th (pointer).vcxproj|C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class6th (pointer)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{788A92C3-D8C8-4429-B03B-A9117CE0273A}|class6th (pointer)\\class6th (pointer).vcxproj|C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class6th (pointer)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{788A92C3-D8C8-4429-B03B-A9117CE0273A}|class6th (pointer)\\class6th (pointer).vcxproj|solutionrelative:class6th (pointer)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806E1551-80DB-47F6-B713-0368FD0B1CF4}|class1th (varlable \u0026 Constant)\\class1th (varlable \u0026 Constant).vcxproj|C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{806E1551-80DB-47F6-B713-0368FD0B1CF4}|class1th (varlable \u0026 Constant)\\class1th (varlable \u0026 Constant).vcxproj|C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{806E1551-80DB-47F6-B713-0368FD0B1CF4}|class1th (varlable \u0026 Constant)\\class1th (varlable \u0026 Constant).vcxproj|solutionrelative:class1th (varlable \u0026 Constant)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03B8AED8-7980-4D4A-B040-E85DB7179012}|class4th (conditional statement)\\class4th (conditional statement).vcxproj|C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class4th (conditional statement)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{03B8AED8-7980-4D4A-B040-E85DB7179012}|class4th (conditional statement)\\class4th (conditional statement).vcxproj|C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class4th (conditional statement)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{03B8AED8-7980-4D4A-B040-E85DB7179012}|class4th (conditional statement)\\class4th (conditional statement).vcxproj|solutionrelative:class4th (conditional statement)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4E57F6F-8096-49BF-B13F-CAE08BDEEC4C}|class2th (bit)\\class2th (bit).vcxproj|C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class2th (bit)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E4E57F6F-8096-49BF-B13F-CAE08BDEEC4C}|class2th (bit)\\class2th (bit).vcxproj|C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class2th (bit)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E4E57F6F-8096-49BF-B13F-CAE08BDEEC4C}|class2th (bit)\\class2th (bit).vcxproj|solutionrelative:class2th (bit)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D27AEC4D-F586-41B8-BEB4-E9E79B9C9CCF}|class3th(for,while,do while)\\class3th(for,while,do while).vcxproj|C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class3th(for,while,do while)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{D27AEC4D-F586-41B8-BEB4-E9E79B9C9CCF}|class3th(for,while,do while)\\class3th(for,while,do while).vcxproj|C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class3th(for,while,do while)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D27AEC4D-F586-41B8-BEB4-E9E79B9C9CCF}|class3th(for,while,do while)\\class3th(for,while,do while).vcxproj|solutionrelative:class3th(for,while,do while)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0AA65E8-D287-4F3B-884C-41D709FCAA71}|class 5th (conversion)\\class 5th (conversion).vcxproj|C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class 5th (conversion)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{B0AA65E8-D287-4F3B-884C-41D709FCAA71}|class 5th (conversion)\\class 5th (conversion).vcxproj|C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class 5th (conversion)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B0AA65E8-D287-4F3B-884C-41D709FCAA71}|class 5th (conversion)\\class 5th (conversion).vcxproj|solutionrelative:class 5th (conversion)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -48,11 +48,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\program\\source.c",
+              "DocumentMoniker": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\program\\source.c",
               "RelativeDocumentMoniker": "program\\source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\program\\source.c",
+              "ToolTip": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\program\\source.c",
               "RelativeToolTip": "program\\source.c",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAALEAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAAANYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-06-02T05:57:03.446Z",
               "EditorCaption": ""
@@ -61,92 +61,85 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c",
+              "DocumentMoniker": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c",
               "RelativeDocumentMoniker": "class1th (varlable \u0026 Constant)\\source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c",
+              "ToolTip": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class1th (varlable \u0026 Constant)\\source.c",
               "RelativeToolTip": "class1th (varlable \u0026 Constant)\\source.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-21T05:42:00.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T05:42:00.069Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class2th (bit)\\source.c",
+              "DocumentMoniker": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class2th (bit)\\source.c",
               "RelativeDocumentMoniker": "class2th (bit)\\source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class2th (bit)\\source.c",
+              "ToolTip": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class2th (bit)\\source.c",
               "RelativeToolTip": "class2th (bit)\\source.c",
               "ViewState": "AgIAAKEAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-22T06:20:46.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T06:20:46.795Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class3th(for,while,do while)\\source.c",
+              "DocumentMoniker": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class3th(for,while,do while)\\source.c",
               "RelativeDocumentMoniker": "class3th(for,while,do while)\\source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class3th(for,while,do while)\\source.c",
+              "ToolTip": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class3th(for,while,do while)\\source.c",
               "RelativeToolTip": "class3th(for,while,do while)\\source.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-23T05:37:26.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T05:37:26.67Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class4th (conditional statement)\\source.c",
+              "DocumentMoniker": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class4th (conditional statement)\\source.c",
               "RelativeDocumentMoniker": "class4th (conditional statement)\\source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class4th (conditional statement)\\source.c",
+              "ToolTip": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class4th (conditional statement)\\source.c",
               "RelativeToolTip": "class4th (conditional statement)\\source.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAL8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-26T06:10:10.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T06:10:10.022Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class 5th (conversion)\\source.c",
+              "DocumentMoniker": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class 5th (conversion)\\source.c",
               "RelativeDocumentMoniker": "class 5th (conversion)\\source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class 5th (conversion)\\source.c",
+              "ToolTip": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class 5th (conversion)\\source.c",
               "RelativeToolTip": "class 5th (conversion)\\source.c",
               "ViewState": "AgIAADcAAAAAAAAAAAAmwEEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-27T05:22:22.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T05:22:22.068Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class6th (pointer)\\source.c",
+              "DocumentMoniker": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class6th (pointer)\\source.c",
               "RelativeDocumentMoniker": "class6th (pointer)\\source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class6th (pointer)\\source.c",
+              "ToolTip": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class6th (pointer)\\source.c",
               "RelativeToolTip": "class6th (pointer)\\source.c",
               "ViewState": "AgIAAEMAAAAAAAAAAAAmwHsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-29T04:05:29.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T04:05:29.051Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class7th array\\source.c",
+              "DocumentMoniker": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class7th array\\source.c",
               "RelativeDocumentMoniker": "class7th array\\source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\unity\\Bex\\SBS-c-class\\program\\class7th array\\source.c",
+              "ToolTip": "C:\\Users\\Legion\\Desktop\\SBS-c-class\\program\\class7th array\\source.c",
               "RelativeToolTip": "class7th array\\source.c",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAJYAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-30T04:27:46.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T04:27:46.1Z"
             }
           ]
         }
