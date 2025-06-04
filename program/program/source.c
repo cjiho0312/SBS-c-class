@@ -29,6 +29,12 @@ struct Node
 
 };
 
+typedef struct Enemy
+{
+	int health;
+	double attack;
+} enemy; // 구조체 별칭을 enemy로 정의
+
 
 int main()
 {
@@ -94,16 +100,19 @@ int main()
 	// 자기 자신과 같은 타입의 포인터를 멤버로 표현하고 있는 구조체입니다.
 
 	/*
-	-첫번째 방법-
+	-첫 번째 방법-
 
 	struct Node node = { 10 };
 
-	for (int i = 1; i < 4; i++) 
+	for (int i = 1; i < 4; i++)
 	{
 		printf("node%d : %d\n", i, node.data);
 		node.data = node.data + 10;
 	}
 	*/
+
+	/*
+	-두 번째 방법-
 
 	struct Node node1 = { 10, NULL };
 	struct Node node2 = { 20, NULL };
@@ -113,19 +122,34 @@ int main()
 	node2.next = &node3;
 	node3.next = NULL;
 
-	struct Node* currentNode;
+	struct Node* currentNode = &node1;
+	
+	int i = 1;
 
-	currentNode = node1.data;
-
-	printf("node1의 data 값 : %d\n", currentNode);
-	printf("node2의 data 값 : %d\n", currentNode);
-
-
-
-	// 숙제 : currentNode에 참조 후 값 출력 / typedef 예제와 실습, 출력 해보기.
+	while (currentNode != NULL) 
+	{
+	    printf("node%d의 data 값 : %d\n", i++, currentNode->data);
+	    currentNode = currentNode->next;
+	}
+	*/
 
 #pragma endregion
 
+#pragma region typedef
+	// 기존의 자료형에 새롭게 별칭을 부여할 때 사용합니다.
+	
+	// struct 앞에 typedef을 선언하고 정의한 뒤에 새로운 별칭을 추가로 선언해주면
+    // 구조체 변수를 선언할 때 struct를 붙이지 않아도 됩니다.
+
+enemy slime;
+
+slime.health = 20;
+slime.attack = 5.2;
+
+printf("체력 : %d\n", slime.health);
+printf("공격력 : %lf\n", slime.attack);
+
+#pragma endregion
 
 
 	return 0;
