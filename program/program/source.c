@@ -1,66 +1,139 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
+
+
+struct Card
+{
+	char grade; // 1byte
+
+	double attack; // 8byte
+	
+	int health; // 4byte
+
+	// 구조체의 크기는 구조체를 구성하는 멤버 중에서 크기가 가장 큰 자료형의 배수가 되도록 설정합니다.
+};
+
+
+struct coordinate
+{
+	double x;
+	double y;
+};
+
+
+struct Node
+{
+	int data;
+
+	struct Node * next;
+
+};
+
 
 int main()
 {
+#pragma region 구조체
+	// 여러 개의 변수를 하나의 집합으로 구조화한 다음
+	// 하나의 객체를 생성하는 것입니다.
 
-#pragma region 동적 할당
-	
-	// int* pointer = malloc(4);
-	
-	// 프로그램을 실행 중에 필요한 만큼 메모리를 할당하는 작업입니다.
+	// struct Card card = { 'C', 20, 7.5 };
 
-	// *pointer = 10;
+	// 구조체의 각 멤버는 구조체 선언에서 나타나는 순서대로 초기화해야 하며,
+	// 이 순서는 왼쪽에서 오른쪽으로 이어집니다.
 
-	// printf("pointer가 가리키는 값 : %d\n\n", *pointer);
+	// printf("Grage : %c\nHealth : %d\nAttack : %.1lf\n\n", card.grade, card.health, card.attack);
 
-	// 동적 할당은 실행 시간애 가변적으로 메모리의 크기를 변경시킬 수 있으며,
-	// 동적으로 메모리의 크기를 할당할 때 바이트 단위로 지정합니다.
+	// card.grade = 'A';
+	// card.health = 50;
+	// card.attack = 10.8;
 
-	// free(pointer);
+	// printf("Grage : %c\nHealth : %d\nAttack : %.1lf\n", card.grade, card.health, card.attack);
 
-	// 동적으로 할당한 메모리는 합 영역에 보관되어 있으므로
-	// 사용이 끝나면 직접 해제해주어야 합니다.
-
+	// 구조체를 선언하기 전에 구조체는 메모리 공간이 생성되지 않으므로,
+	// 구조체 내부에 있는 데이터를 초기화 할 수 없습니다.
 #pragma endregion
 
-#pragma region 동적 배열
-	
-	/*
-	pointer = malloc(sizeof(int)*3); // malloc(12)와 같음.
+#pragma region 바이트 패딩
+	// 멤버 변수를 메모리에서 CPU로 읽을 때 한 번에 읽을 수 있도록
+	// 컴파일러가 레지스터의 블록에 맞추어 바이트를 패딩해주는 최적화 작업입니다.
 
-	for (int i = 0; i < 3; i++) {
-		pointer[i] = (i + 1) * 10;
-		printf("pointer[%d] = %d\n", i, pointer[i]);
+	// printf("Card 구조체의 크기 : %d\n", sizeof(struct Card)); // 16byte
+
+	// 구조체 크기의 경우 멤버 변수의 순서에 따라 메모리 크기가 다르게 설정될 수 있으며,
+	// 구조체 크기를 결정하는 형태는 기본 자료형으로만 구성됩니다.
+	// 가장 크기가 큰 자료형의 변수를 맨 아래에 위치시켜야 메모리를 아낄 수 었습니다.
+#pragma endregion
+
+#pragma region 두 점 사이의 거리
+	
+	// sqrt(100);
+	// printf("sqrt 100 : %lf\n", sqrt(100)); // 루트 100
+	// printf("pow(2,3): %lf\n", pow(2, 3)); // 2의 3승
+
+	/*
+	struct coordinate player = { 7, 3 };
+	struct coordinate enemy = { 8, 4 };
+
+	double distance = sqrt (pow((enemy.x - player.x), 2) + (pow((enemy.y - player.y), 2))) ; // 두 점 사이의 거리 계산
+
+
+	if (distance > 3.0)
+	{
+		printf("moving...");
 	}
 
-	free(pointer);
+	if (distance <= 3.0) // 혹은 else만 적어도 됨.
+	{
+		printf("attack mode");
+	}
 	*/
 
 #pragma endregion
 
-#pragma region UAF
-	// UAF(Use After Free)는 메모리를 해제하고 다시 사용할 때 생기는 취약점 입니다.
-	// 이미 free()로 해제된 메모리 영역을 계속 사용하게 되면 정의되지 않은 동작(Undefined Behavior)을 유발하며, 
-	// 프로그램이 예기치 않게 동작하거나 보안 문제로 이어질 수 있습니다.
+#pragma region 자기 참조 구조체
+	// 자기 자신과 같은 타입의 포인터를 멤버로 표현하고 있는 구조체입니다.
 
-	int* a = malloc(sizeof(int));  // 동적 메모리 할당
+	/*
+	-첫번째 방법-
 
-	*a = 5;  // 메모리 사용
+	struct Node node = { 10 };
 
-	printf("a의 값 : %d\n", *a);
+	for (int i = 1; i < 4; i++) 
+	{
+		printf("node%d : %d\n", i, node.data);
+		node.data = node.data + 10;
+	}
+	*/
 
-	free(a);  // 메모리 해제
+	struct Node node1 = { 10, NULL };
+	struct Node node2 = { 20, NULL };
+	struct Node node3 = { 30, NULL };
 
-	printf("메모리 해제 후 접근: %d\n", *a);  // UAF 발생
+	node1.next = &node2;
+	node2.next = &node3;
+	node3.next = NULL;
+
+	struct Node* currentNode;
+
+	currentNode = node1.data;
+
+	printf("node1의 data 값 : %d\n", currentNode);
+	printf("node2의 data 값 : %d\n", currentNode);
+
+
+
+	// 숙제 : currentNode에 참조 후 값 출력 / typedef 예제와 실습, 출력 해보기.
 
 #pragma endregion
+
+
 
 	return 0;
 }
 
+//질문
 /*
-질문
+Q. struct Node *next;가 무엇을 뜻하는 거고, 왜 들어가 있는 건지?
 
 
 */
