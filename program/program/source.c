@@ -1,163 +1,139 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
+#include <time.h>
 
 
-struct Card
+void Shuffle(int array[ ], int size) // (변수, size)
 {
-	char grade; // 1byte
 
-	double attack; // 8byte
-	
-	int health; // 4byte
+	for (int i = 0; i < size; i++)
+	{
+	    int seed = rand() % size;
 
-	// 구조체의 크기는 구조체를 구성하는 멤버 중에서 크기가 가장 큰 자료형의 배수가 되도록 설정합니다.
-};
+		int temporary = array[seed];
 
+		array[seed] = array[i];
 
-struct coordinate
-{
-	double x;
-	double y;
-};
+		array[i] = temporary;
+	}
 
-
-struct Node
-{
-	int data;
-
-	struct Node * next;
-
-};
-
-typedef struct Enemy
-{
-	int health;
-	double attack;
-} enemy; // 구조체 별칭을 enemy로 정의
-
+}
 
 int main()
 {
-#pragma region 구조체
-	// 여러 개의 변수를 하나의 집합으로 구조화한 다음
-	// 하나의 객체를 생성하는 것입니다.
+#pragma region 의사 난수
+	// rand() : 0-32767 사이의 난수의 값을 반환하는 함수입니다.
 
-	// struct Card card = { 'C', 20, 7.5 };
+	// time(NULL) : 1970년 1월 1일 (00:00:00) UTC 이후에 지난 초(second)를 반환하는 함수입니다.
 
-	// 구조체의 각 멤버는 구조체 선언에서 나타나는 순서대로 초기화해야 하며,
-	// 이 순서는 왼쪽에서 오른쪽으로 이어집니다.
-
-	// printf("Grage : %c\nHealth : %d\nAttack : %.1lf\n\n", card.grade, card.health, card.attack);
-
-	// card.grade = 'A';
-	// card.health = 50;
-	// card.attack = 10.8;
-
-	// printf("Grage : %c\nHealth : %d\nAttack : %.1lf\n", card.grade, card.health, card.attack);
-
-	// 구조체를 선언하기 전에 구조체는 메모리 공간이 생성되지 않으므로,
-	// 구조체 내부에 있는 데이터를 초기화 할 수 없습니다.
-#pragma endregion
-
-#pragma region 바이트 패딩
-	// 멤버 변수를 메모리에서 CPU로 읽을 때 한 번에 읽을 수 있도록
-	// 컴파일러가 레지스터의 블록에 맞추어 바이트를 패딩해주는 최적화 작업입니다.
-
-	// printf("Card 구조체의 크기 : %d\n", sizeof(struct Card)); // 16byte
-
-	// 구조체 크기의 경우 멤버 변수의 순서에 따라 메모리 크기가 다르게 설정될 수 있으며,
-	// 구조체 크기를 결정하는 형태는 기본 자료형으로만 구성됩니다.
-	// 가장 크기가 큰 자료형의 변수를 맨 아래에 위치시켜야 메모리를 아낄 수 었습니다.
-#pragma endregion
-
-#pragma region 두 점 사이의 거리
-	
-	// sqrt(100);
-	// printf("sqrt 100 : %lf\n", sqrt(100)); // 루트 100
-	// printf("pow(2,3): %lf\n", pow(2, 3)); // 2의 3승
+	// srand : 난수 생성기의 시드를 설정하는 함수입니다.
 
 	/*
-	struct coordinate player = { 7, 3 };
-	struct coordinate enemy = { 8, 4 };
+	srand(time(NULL));
+	
+	int index = rand() % 10; // 랜덤한 값이 0-10 사이를 나타내도록 함.
 
-	double distance = sqrt (pow((enemy.x - player.x), 2) + (pow((enemy.y - player.y), 2))) ; // 두 점 사이의 거리 계산
-
-
-	if (distance > 3.0)
+	if (index == 0)
 	{
-		printf("moving...");
+		index + 1;
+		printf("random value : %d", index);
 	}
-
-	if (distance <= 3.0) // 혹은 else만 적어도 됨.
+	else
 	{
-		printf("attack mode");
+		printf("random value : %d", index);
 	}
 	*/
 
 #pragma endregion
 
-#pragma region 자기 참조 구조체
-	// 자기 자신과 같은 타입의 포인터를 멤버로 표현하고 있는 구조체입니다.
 
-	/*
-	-첫 번째 방법-
-
-	struct Node node = { 10 };
-
-	for (int i = 1; i < 4; i++)
-	{
-		printf("node%d : %d\n", i, node.data);
-		node.data = node.data + 10;
-	}
-	*/
-
-	/*
-	-두 번째 방법-
-
-	struct Node node1 = { 10, NULL };
-	struct Node node2 = { 20, NULL };
-	struct Node node3 = { 30, NULL };
-
-	node1.next = &node2;
-	node2.next = &node3;
-	node3.next = NULL;
-
-	struct Node* currentNode = &node1;
+#pragma region 셔플 함수
 	
-	int i = 1;
+	/*
+	srand(time(NULL));
 
-	while (currentNode != NULL) 
+	int list[10] = {1,2,3,4,5,6,7,8,9,10};
+
+	int size = sizeof(list) / sizeof(int);
+
+	Shuffle(list, size);
+
+	for (int i = 0; i < size; i++) 
 	{
-	    printf("node%d의 data 값 : %d\n", i++, currentNode->data);
-	    currentNode = currentNode->next;
+		printf("list[%d] : %d\n", i, list[i]);
 	}
 	*/
 
 #pragma endregion
 
-#pragma region typedef
-	// 기존의 자료형에 새롭게 별칭을 부여할 때 사용합니다.
-	
-	// struct 앞에 typedef을 선언하고 정의한 뒤에 새로운 별칭을 추가로 선언해주면
-    // 구조체 변수를 선언할 때 struct를 붙이지 않아도 됩니다.
 
-enemy slime;
+#pragma region 업다운 게임 예제
+	// 플레이어는 목숨 5개, 컴퓨터는 1-50 중 랜덤한 값을 지정, 플레이어는 숫자를 예측하고, 틀리면 힌트 제공. 빅토리/디피트 출력 
 
-slime.health = 20;
-slime.attack = 5.2;
+	/*
+	srand(time(NULL));
 
-printf("체력 : %d\n", slime.health);
-printf("공격력 : %lf\n", slime.attack);
+	int num = rand() % 50; // 컴퓨터가 지정한 숫자
+	int player = 0; // 플레이어가 예측한 숫자
+	int health = 5; // 플레이어 체력
 
+	if (num == 0) // 값이 0이 지정됐을 때
+	{
+		num += 1;
+	}
+
+	// printf("(컴퓨터가 지정한 숫자 : %d)\n\n", num); // 결과 미리 확인용
+
+	printf("***숫자 맞추기 게임 START****\n\n");
+
+	while (health > 0)
+	{
+		printf("현재 체력 : ");
+
+		for (int i = 0; i < health; i++) // health 하트 출력
+		{
+	    printf("\u2661");
+		}
+		printf("\n\n");
+
+		printf("숫자(1~50)를 입력하세요.\n\n");
+
+		scanf_s("%d", &player); // 플레이어에게서 값을 입력받음
+
+		if (player < num)
+		{
+			printf("\n컴퓨터가 가지고 있는 값보다 작습니다.\n\n");
+			health -= 1;
+		}
+
+		if (player > num)
+		{
+			printf("\n컴퓨터가 가지고 있는 값보다 큽니다.\n\n");
+			health -= 1;
+		}
+
+		if (player == num)
+		{
+			printf("\n\nV I C T O R Y\n\n");
+			break; // 반복문 탈출
+		}
+	}
+
+	if (health <= 0) // 체력이 0이 되었을 때
+	{
+	printf("체력이 모두 소모되었습니다.\n");
+	printf("\n\nD E F E A T\n\n\n");
+	printf("컴퓨터가 지정한 숫자 : %d", num); // 정답 알려주기
+	}
+	*/
+
+#pragma endregion
+
+
+#pragma region 열거형
+// 이론, 예제
 #pragma endregion
 
 
 	return 0;
 }
-
-//질문
-/*
-Q. struct Node *next;가 무엇을 뜻하는 거고, 왜 들어가 있는 건지?
-
-
-*/
